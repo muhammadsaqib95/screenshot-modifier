@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { memo, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import useLang from '../hooks/useLang'
 import useStore from '../hooks/useStore'
 import { Position } from '../types'

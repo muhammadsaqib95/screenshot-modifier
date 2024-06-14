@@ -1,4 +1,4 @@
-import React, { cloneElement, memo, ReactElement, ReactNode, useContext, useEffect, useRef, useState } from 'react'
+import { cloneElement, memo, ReactElement, ReactNode, useContext, useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { ScreenshotsOperationsCtx } from '../ScreenshotsOperations'
 import { Point } from '../types'

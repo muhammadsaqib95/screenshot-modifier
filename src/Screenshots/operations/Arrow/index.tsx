@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback, useRef, useState } from 'react'
+import { ReactElement, useCallback, useRef, useState } from 'react'
 import ScreenshotsButton from '../../ScreenshotsButton'
 import ScreenshotsSizeColor from '../../ScreenshotsSizeColor'
 import useCanvasMousedown from '../../hooks/useCanvasMousedown'

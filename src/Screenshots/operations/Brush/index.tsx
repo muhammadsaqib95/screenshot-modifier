@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback, useRef, useState } from 'react'
+import { ReactElement, useCallback, useRef, useState } from 'react'
 import useCanvasMousedown from '../../hooks/useCanvasMousedown'
 import useCanvasMousemove from '../../hooks/useCanvasMousemove'
 import useCanvasMouseup from '../../hooks/useCanvasMouseup'

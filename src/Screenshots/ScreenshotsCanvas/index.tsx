@@ -51,7 +51,7 @@ export default memo(
     ref
   ): ReactElement | null {
     const { url, image, width, height } = useStore()
-
+    console.log(props)
     const emiter = useEmiter()
     const [history] = useHistory()
     const [cursor] = useCursor()
@@ -221,7 +221,7 @@ export default memo(
         }}
       >
         <div className='screenshots-canvas-body'>
-          {/* 保证一开始就显示，减少加载时间 */}
+          {/* Ensure it is displayed from the beginning to reduce loading time */}
           <img
             className='screenshots-canvas-image'
             src={url}

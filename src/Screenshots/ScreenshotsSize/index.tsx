@@ -1,4 +1,4 @@
-import React, { memo, ReactElement } from 'react'
+import { memo, ReactElement } from 'react'
 import './index.less'
 
 export interface SizeProps {

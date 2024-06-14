@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback } from 'react'
+import { ReactElement, useCallback } from 'react'
 import useStore from '../../hooks/useStore'
 import useCall from '../../hooks/useCall'
 import useCanvasContextRef from '../../hooks/useCanvasContextRef'

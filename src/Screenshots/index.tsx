@@ -1,4 +1,4 @@
-import React, { MouseEvent, ReactElement, useCallback, useLayoutEffect, useRef, useState } from 'react'
+import { MouseEvent, ReactElement, useCallback, useLayoutEffect, useRef, useState } from 'react'
 import composeImage from './composeImage'
 import './icons/iconfont.less'
 import './screenshots.less'
