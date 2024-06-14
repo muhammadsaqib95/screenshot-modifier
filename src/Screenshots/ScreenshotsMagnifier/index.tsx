@@ -64,7 +64,7 @@ export default memo(function ScreenshotsMagnifier ({ x, y }: ScreenshotsMagnifie
     ctx.clearRect(0, 0, magnifierWidth, magnifierHeight)
     const rx = image.naturalWidth / width
     const ry = image.naturalHeight / height
-    // 显示原图比例
+    // Show original image proportion
     ctx.drawImage(
       image,
       x * rx - magnifierWidth / 2,
@@ -103,7 +103,7 @@ export default memo(function ScreenshotsMagnifier ({ x, y }: ScreenshotsMagnifie
       </div>
       <div className='screenshots-magnifier-footer'>
         <div className='screenshots-magnifier-footer-item'>
-          {lang.magnifier_position_label}: ({x},{y})
+          {lang.magnifier_position_label}: ({x.toFixed(1)},{y.toFixed(1)})
         </div>
         <div className='screenshots-magnifier-footer-item'>RGB: #{rgb}</div>
       </div>

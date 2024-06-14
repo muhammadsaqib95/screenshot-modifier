@@ -129,7 +129,7 @@ export default function Mosaic (): ReactElement {
       } else {
         const dx = lastTile.x - x
         const dy = lastTile.y - y
-        // 减小点的个数
+        // Reduce the number of points
         let length = Math.sqrt(dx ** 2 + dy ** 2)
         const sin = -dy / length
         const cos = -dx / length
@@ -146,7 +146,7 @@ export default function Mosaic (): ReactElement {
           length -= mosaicSize
         }
 
-        // 最后一个位置补充一块
+        // Add a piece to the last position
         if (length > mosaicSize / 2) {
           mosaicTiles.push({
             x,

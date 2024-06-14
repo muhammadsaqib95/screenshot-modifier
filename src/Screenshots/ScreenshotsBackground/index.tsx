@@ -12,8 +12,8 @@ export default memo(function ScreenshotsBackground (): ReactElement | null {
 
   const elRef = useRef<HTMLDivElement>(null)
   const pointRef = useRef<Point | null>(null)
-  // 用来判断鼠标是否移动过
-  // 如果没有移动过位置，则mouseup时不更新
+  // Used to determine whether the mouse has moved
+  // If the position has not been moved, it will not be updated during mouseup.
   const isMoveRef = useRef<boolean>(false)
   const [position, setPosition] = useState<Position | null>(null)
 
@@ -44,7 +44,7 @@ export default memo(function ScreenshotsBackground (): ReactElement | null {
 
   const onMouseDown = useCallback(
     (e: React.MouseEvent) => {
-      // e.button 鼠标左键
+      // e.button left mouse button
       if (pointRef.current || bounds || e.button !== 0) {
         return
       }
@@ -106,12 +106,12 @@ export default memo(function ScreenshotsBackground (): ReactElement | null {
 
   useLayoutEffect(() => {
     if (!image || bounds) {
-      // 重置位置
+      // Reset location
       setPosition(null)
     }
   }, [image, bounds])
 
-  // 没有加载完不显示图片
+  // The image is not displayed until it is loaded.
   if (!url || !image) {
     return null
   }

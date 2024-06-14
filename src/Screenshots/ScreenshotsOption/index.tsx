@@ -57,21 +57,21 @@ export default memo(function ScreenshotsOption ({ open, content, children }: Scr
     let y = childrenRect.top + childrenRect.height
     let currentOffsetX = offsetX
 
-    // 如果左右都越界了，就以左边界为准
+    // If both the left and right boundaries are crossed, the left boundary shall prevail.
     if (x + contentRect.width / 2 > operationsRect.x + operationsRect.width) {
       const ox = x
       x = operationsRect.x + operationsRect.width - contentRect.width / 2
       currentOffsetX = ox - x
     }
 
-    // 左边不能超出
+    // Can't go beyond the left
     if (x < operationsRect.x + contentRect.width / 2) {
       const ox = x
       x = operationsRect.x + contentRect.width / 2
       currentOffsetX = ox - x
     }
 
-    // 如果上下都越界了，就以上边界为准
+    // If the upper and lower boundaries are exceeded, the upper boundary shall prevail.
     if (y > window.innerHeight - contentRect.height) {
       if (currentPlacement === Placement.Bottom) {
         currentPlacement = Placement.Top

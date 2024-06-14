@@ -4,7 +4,7 @@ export default function useGetLoadedImage (url?: string): HTMLImageElement | nul
   const [image, setImage] = useState<HTMLImageElement | null>(null)
 
   useEffect(() => {
-    // 先置空图片
+    // Leave the picture blank first
     setImage(null)
     if (url == null) {
       return

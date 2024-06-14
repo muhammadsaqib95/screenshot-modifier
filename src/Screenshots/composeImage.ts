@@ -25,7 +25,7 @@ export default function composeImage ({ image, width, height, history, bounds }:
     const ry = image.naturalHeight / height
 
     ctx.imageSmoothingEnabled = true
-    // 设置太高，图片会模糊
+    // If the setting is too high, the picture will be blurry
     ctx.imageSmoothingQuality = 'low'
     ctx.setTransform(window.devicePixelRatio, 0, 0, window.devicePixelRatio, 0, 0)
     ctx.clearRect(0, 0, bounds.width, bounds.height)

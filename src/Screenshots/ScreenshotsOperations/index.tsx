@@ -46,7 +46,7 @@ export default memo(function ScreenshotsOperations (): ReactElement | null {
       y = height - elRect.height - 10
     }
 
-    // 小数存在精度问题
+    // Decimals have precision issues
     if (!position || Math.abs(position.x - x) > 1 || Math.abs(position.y - y) > 1) {
       setPosition({
         x,
@@ -54,7 +54,7 @@ export default memo(function ScreenshotsOperations (): ReactElement | null {
       })
     }
 
-    // 小数存在精度问题
+    // Decimals have precision issues
     if (
       !operationsRect ||
       Math.abs(operationsRect.x - elRect.x) > 1 ||

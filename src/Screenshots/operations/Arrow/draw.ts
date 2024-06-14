@@ -38,7 +38,7 @@ export default function draw (ctx: CanvasRenderingContext2D, action: HistoryItem
 
   const dx = x2 - x1
   const dy = y2 - y1
-  // 箭头头部长度
+  // Arrow head length
   const length = size * 3
   const angle = Math.atan2(dy, dx)
   ctx.beginPath()

@@ -29,6 +29,6 @@ export function isHitCircle (canvas: HTMLCanvasElement | null, e: MouseEvent, po
   const x = e.clientX - left
   const y = e.clientY - top
 
-  // 点到圆心的距离是否小于半径
+  // Is the distance from the point to the center of the circle less than the radius?
   return (point.x - x) ** 2 + (point.y - y) ** 2 < CircleRadius ** 2
 }

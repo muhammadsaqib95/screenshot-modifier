@@ -6,7 +6,7 @@ export default function getBoundsByPoints (
   width: number,
   height: number
 ): Bounds {
-  // 交换值
+  // exchange value
   if (x1 > x2) {
     [x1, x2] = [x2, x1]
   }
@@ -15,7 +15,7 @@ export default function getBoundsByPoints (
     [y1, y2] = [y2, y1]
   }
 
-  // 把图形限制在元素里面
+  // Limit graphics to elements
   if (x1 < 0) {
     x1 = 0
   }

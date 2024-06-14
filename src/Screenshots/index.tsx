@@ -133,7 +133,7 @@ export default function Screenshots ({ url, width, height, lang, className, ...p
     [call]
   )
 
-  // url变化，重置截图区域
+  // URL changes, reset screenshot area
   useLayoutEffect(() => {
     reset()
   }, [url])

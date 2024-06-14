@@ -73,7 +73,7 @@ export default memo(
 
       const ctx = ctxRef.current
       ctx.imageSmoothingEnabled = true
-      // 设置太高，图片会模糊
+      // If the setting is too high, the picture will be blurry
       ctx.imageSmoothingQuality = 'low'
       ctx.clearRect(0, 0, bounds.width, bounds.height)
 
@@ -203,7 +203,7 @@ export default memo(
       }
     }, [updateBounds, operation, emiter])
 
-    // 放到最后，保证ctxRef.current存在
+    // Put it at the end to ensure that ctxRef.current exists
     useImperativeHandle<
       CanvasRenderingContext2D | null,
       CanvasRenderingContext2D | null

@@ -57,11 +57,11 @@ export default function draw (ctx: CanvasRenderingContext2D, action: HistoryItem
   const rx = Math.abs(x2 - x1) / 2
   const ry = Math.abs(y2 - y1) / 2
   const k = 0.5522848
-  // 水平控制点偏移量
+  // Horizontal control point offset
   const ox = rx * k
-  // 垂直控制点偏移量
+  // vertical control point offset
   const oy = ry * k
-  // 从椭圆的左端点开始顺时针绘制四条三次贝塞尔曲线
+  // Draw four cubic Bezier curves clockwise starting from the left endpoint of the ellipse
   ctx.beginPath()
   ctx.moveTo(x - rx, y)
   ctx.bezierCurveTo(x - rx, y - oy, x - ox, y - ry, x, y - ry)
